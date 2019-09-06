@@ -1,0 +1,56 @@
+<h1 id="GIT系统基本命令行以及操作步骤"><a href="#GIT系统基本命令行以及操作步骤" class="headerlink" title="GIT系统基本命令行以及操作步骤"></a>GIT系统基本命令行以及操作步骤</h1><h3 id="在线操作"><a href="#在线操作" class="headerlink" title="在线操作"></a>在线操作</h3><h4 id="1-生成SSH密钥"><a href="#1-生成SSH密钥" class="headerlink" title="1.生成SSH密钥"></a>1.生成SSH密钥</h4><p>ssh-keygen -t rsa -C “邮箱地址” #密钥会在C盘User下的.ssh文件夹</p>
+<p>ssh -T <a href="mailto:git@github.com">git@github.com</a>#测试链接是否成功</p>
+<ul>
+<li><em>具体步骤参见</em>：<a href="https://www.cnblogs.com/superjt/p/5977719.html">https://www.cnblogs.com/superjt/p/5977719.html</a>或</li>
+</ul>
+<p>​      <a href="https://www.cnblogs.com/sdcs/p/8270029.html&gt;">https://www.cnblogs.com/sdcs/p/8270029.html&gt;</a></p>
+<h4 id="2-设置默认的用户名与邮箱"><a href="#2-设置默认的用户名与邮箱" class="headerlink" title="2.设置默认的用户名与邮箱"></a>2.设置默认的用户名与邮箱</h4><p>git config  –global user.name “用户名”</p>
+<p>git config –global user.email “邮箱”</p>
+<blockquote>
+<p>git config –list#查看配置列表</p>
+</blockquote>
+<h4 id="3-添加在线仓库与本地仓库链接"><a href="#3-添加在线仓库与本地仓库链接" class="headerlink" title="3.添加在线仓库与本地仓库链接"></a>3.添加在线仓库与本地仓库链接</h4><p>git remote add origin http://……#<strong><em>注意这里的origin是在线库地址的指代名称</em></strong></p>
+<blockquote>
+<p>git remote#查看当前配置的远程仓库</p>
+</blockquote>
+<blockquote>
+<p>git remote -v#查看已经链接的在线库地址与指代名称</p>
+</blockquote>
+<h3 id="本地操作-加粗指令为常用指令"><a href="#本地操作-加粗指令为常用指令" class="headerlink" title="本地操作(加粗指令为常用指令)"></a>本地操作(加粗指令为常用指令)</h3><h4 id="1-将本地文件夹变为Git可管理的库并上传到Respostry"><a href="#1-将本地文件夹变为Git可管理的库并上传到Respostry" class="headerlink" title="1.将本地文件夹变为Git可管理的库并上传到Respostry"></a>1.将本地文件夹变为Git可管理的库并上传到Respostry</h4><p>git init #初始化，在本地文件见内建立.git文件夹，这个文件夹用于缓存</p>
+<p><strong>git add .#添加当前文件夹内容到.git文件夹下，做好上传准备，这是每次上传的必备步骤</strong></p>
+<blockquote>
+<p>git add xxx.xxx#添加指定文件到,git文件夹下</p>
+</blockquote>
+<p><strong>git commit -m “注释内容”#添加注释内容，每一次push前必须进行此步，不然无法上传</strong></p>
+<p><strong>git push -u origin master#将.git文件夹内容push到origin所代表的仓库中的master分支中</strong></p>
+<blockquote>
+<p>git push origin master#第一次加了-u后之后就不用加了</p>
+<p>git push origin master -f#强制push</p>
+</blockquote>
+<h4 id="2-将指定url地址下的内容克隆到本地"><a href="#2-将指定url地址下的内容克隆到本地" class="headerlink" title="2.将指定url地址下的内容克隆到本地"></a>2.将指定url地址下的内容克隆到本地</h4><p><strong>git clone <a href="mailto:git@github.com">git@github.com</a>….</strong></p>
+<h4 id="3-从远程仓库下载新的改动"><a href="#3-从远程仓库下载新的改动" class="headerlink" title="3.从远程仓库下载新的改动"></a>3.从远程仓库下载新的改动</h4><p>git pull origin master#这里的origin依旧代表了仓库地址</p>
+<p>git reset –hard , git pull#忽略本地修改，直接将远程库文件拉下来</p>
+<h4 id="4-创建新分支并推到云端"><a href="#4-创建新分支并推到云端" class="headerlink" title="4.创建新分支并推到云端"></a>4.创建新分支并推到云端</h4><p>git checkout -b xxx#创建并切换到新分支xxx</p>
+<p>git push origin xxx#推送xxx到云端</p>
+<h3 id="其他指令"><a href="#其他指令" class="headerlink" title="其他指令"></a>其他指令</h3><p>mkdir xxxx#创建文件夹xxxx</p>
+<p>cd xxxx/#进入到文件夹xxxx</p>
+<p>pwd#显示当前目录</p>
+<p>rm xxx#删除xxx文件</p>
+<p>git status#查看当前库里的情况</p>
+<p>git remote -v#查看远程仓库情况</p>
+<p>git remote rm xxx#删除远程仓库xxx</p>
+<p>git branch#查看当前本地所有分支</p>
+<p>git checkout xxx#切换分支</p>
+<p>git branch -r#查看远端分支</p>
+<p>git branch -a#查看所有分支</p>
+<p>git branch xxx#查看远程分支</p>
+<p>git branch -d xxx#删除xxx分支</p>
+<p>git merge xxx#合并分支到master</p>
+<p>git remote show origin#查看远程分支与本地分支的关系</p>
+<p>git stash,git stash,git stash pop#三连备份本地修改，正常pull,然后将本地修改应用到当前工作区</p>
+<p>git diff xxx#查看xxx文件的那些内容被修改过了</p>
+<p>git log#查看以往版本</p>
+<p>git reset –hard HEAD^#滚回上个版本</p>
+<p>git reset –hard xxx#滚到某个版本</p>
+<p>git reset –hard FETCH_HEAD,git pull#冲掉本地修改，直接将云端内容pull下来 </p>
+<p><em>进阶指令可参考</em>：<a href="https://www.jianshu.com/p/ac33f0295629">https://www.jianshu.com/p/ac33f0295629</a></p>
