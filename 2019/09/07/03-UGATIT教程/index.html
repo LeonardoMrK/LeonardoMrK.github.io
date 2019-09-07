@@ -92,15 +92,15 @@
 <meta property="og:site_name" content="Mr.K的笔记本">
 <meta property="og:description" content="Introduce UGATIT是韩国游戏公司NCSOFT开源的一个AI图像风格转换项目，其主要功能是将真人照片转为漫画风格，换句话说就是可以通过技术手段实现照片的“次元转换”，废话不多说，上图~  右侧是真人原图（图片资源源于网络，侵删），左侧是由UGATIT自动转化生成的，可不是P站大触画的哦~ 如你所见，UGATIT可以实现二次元与三次元的双向转化：如果你输入任意小姐姐的自拍，就可以解锁一个">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="d:%5Cmyblog_github%5Csource_posts%5C03_UGATIT%5CUGATIT%E6%95%88%E6%9E%9C%E5%9B%BE.jpg">
-<meta property="og:image" content="d:%5Cmyblog_github%5Csource_posts%5C03_UGATIT%5C1.jpg">
-<meta property="og:image" content="d:%5Cmyblog_github%5Csource_posts%5C03_UGATIT%5Cgenerator.png">
-<meta property="og:image" content="d:%5Cmyblog_github%5Csource_posts%5C03_UGATIT%5Cdiscriminator.png">
-<meta property="og:updated_time" content="2019-09-07T02:02:08.739Z">
+<meta property="og:image" content="d:%5Cmyblog_github%5Cpublic%5Cimages%5C03_UGATIT%E6%95%88%E6%9E%9C%E5%9B%BE.jpg">
+<meta property="og:image" content="d:%5Cmyblog_github%5Cpublic%5Cimages%5C03_1.jpg">
+<meta property="og:image" content="d:%5Cmyblog_github%5Cpublic%5Cimages%5C03_generator.png">
+<meta property="og:image" content="d:%5Cmyblog_github%5Cpublic%5Cimages%5C03_discriminator.png">
+<meta property="og:updated_time" content="2019-09-07T02:08:24.961Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="UGATIT玩耍指南">
 <meta name="twitter:description" content="Introduce UGATIT是韩国游戏公司NCSOFT开源的一个AI图像风格转换项目，其主要功能是将真人照片转为漫画风格，换句话说就是可以通过技术手段实现照片的“次元转换”，废话不多说，上图~  右侧是真人原图（图片资源源于网络，侵删），左侧是由UGATIT自动转化生成的，可不是P站大触画的哦~ 如你所见，UGATIT可以实现二次元与三次元的双向转化：如果你输入任意小姐姐的自拍，就可以解锁一个">
-<meta name="twitter:image" content="d:%5Cmyblog_github%5Csource_posts%5C03_UGATIT%5CUGATIT%E6%95%88%E6%9E%9C%E5%9B%BE.jpg">
+<meta name="twitter:image" content="d:%5Cmyblog_github%5Cpublic%5Cimages%5C03_UGATIT%E6%95%88%E6%9E%9C%E5%9B%BE.jpg">
 
 
 
@@ -395,7 +395,7 @@
       
         <h3 id="Introduce"><a href="#Introduce" class="headerlink" title="Introduce"></a>Introduce</h3><hr>
 <p>UGATIT是韩国游戏公司NCSOFT开源的一个AI图像风格转换项目，其主要功能是将真人照片转为漫画风格，换句话说就是可以通过技术手段实现照片的“次元转换”，废话不多说，上图~</p>
-<p><img src="D:%5Cmyblog_github%5Csource_posts%5C03_UGATIT%5CUGATIT%E6%95%88%E6%9E%9C%E5%9B%BE.jpg" alt="UGATIT效果图"></p>
+<p><img src="D:%5Cmyblog_github%5Cpublic%5Cimages%5C03_UGATIT%E6%95%88%E6%9E%9C%E5%9B%BE.jpg" alt="03_UGATIT效果图"></p>
 <p>右侧是真人原图（图片资源源于网络，侵删），左侧是由UGATIT自动转化生成的，可不是P站大触画的哦~</p>
 <p>如你所见，UGATIT可以实现二次元与三次元的双向转化：如果你输入任意小姐姐的自拍，就可以解锁一个二次元妹子；如果你想看一个二次元萌妹子突破次元壁的样子，那么就给模型输入一张二次元画像，然后你就会看到小姐姐在三次元的样子啦~此外，这个AI模型还可以实现不同动物间的转换、照片与油画间的转换等功能</p>
 <p>怎么样，想必各位绅士已经感叹技术の伟大了吧~</p>
@@ -429,7 +429,7 @@
 <p><strong><em>2.使用预训练模型</em></strong></p>
 <p>还记得刚才大佬发的资源吗？里面可不只有数据集哦~没错，里面还有大佬分享的预训练模型！</p>
 <p>下载保存解压三连后可得到一个叫checkpoint的文件夹，里面存的就是tensorflow版本的预训练模型！（目前还找不到pytorch版本的预训练模型）把这个文件夹放在工程根目录下，这时工程根目录看起来会是这样：</p>
-<p><img src="D:%5Cmyblog_github%5Csource_posts%5C03_UGATIT%5C1.jpg" alt="1"></p>
+<p><img src="D:%5Cmyblog_github%5Cpublic%5Cimages%5C03_1.jpg" alt="03_1"></p>
 <p>然后这时直接运行测试指令：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">测试指令: python main.py --dataset selfie2anime --phase test</span><br></pre></td></tr></table></figure>
 
@@ -446,8 +446,8 @@
 <p>另一个GAN，负责把二次元小姐姐再变回三次元自拍。这是从目标领域到源领域的翻译。</p>
 <p>这样，就有两套Generator与Discriminator的组合。</p>
 <p>其中每一套Generator与Discriminator的大致结构如下图所示：</p>
-<p><img src="D:%5Cmyblog_github%5Csource_posts%5C03_UGATIT%5Cgenerator.png" alt></p>
-<p><img src="D:%5Cmyblog_github%5Csource_posts%5C03_UGATIT%5Cdiscriminator.png" alt></p>
+<p><img src="D:%5Cmyblog_github%5Cpublic%5Cimages%5C03_generator.png" alt="03_generator"></p>
+<p><img src="D:%5Cmyblog_github%5Cpublic%5Cimages%5C03_discriminator.png" alt="03_discriminator"></p>
 <p>此外，为了生成更加逼真的图像，团队给这两只GAN的一共四个部件，加入了不同的注意力…</p>
 <p>全文可见：<a href="https://zhuanlan.zhihu.com/p/76936166" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/76936166</a></p>
 <p>笔者在这里有些疑问，此注意力与NLP的seq2seq模型中的Attention有啥区别与联系？</p>
