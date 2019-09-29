@@ -84,18 +84,18 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. GIT系统">
+<meta name="description" content="GIT系统操作指令备忘以及学习小总结~ GIT系统基本指令以及配置指令笔记GIt的设计让使用者觉得自己比想象中的笨——Andrew Morton  在线配置指令1.生成SSH密钥 ssh-keygen -t rsa -C “邮箱地址” #密钥会在C盘User下的.ssh文件夹 ssh -T git@github.com#测试链接是否成功  具体步骤参见： https://www.cnblogs.c">
 <meta name="keywords" content="GIT指令">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GIT系统基本命令行以及操作步骤">
 <meta property="og:url" content="http://yoursite.com/2019/08/30/02_git指令笔记/index.html">
 <meta property="og:site_name" content="Mr.K的笔记本">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. GIT系统">
+<meta property="og:description" content="GIT系统操作指令备忘以及学习小总结~ GIT系统基本指令以及配置指令笔记GIt的设计让使用者觉得自己比想象中的笨——Andrew Morton  在线配置指令1.生成SSH密钥 ssh-keygen -t rsa -C “邮箱地址” #密钥会在C盘User下的.ssh文件夹 ssh -T git@github.com#测试链接是否成功  具体步骤参见： https://www.cnblogs.c">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-06T15:09:51.208Z">
+<meta property="og:updated_time" content="2019-09-29T13:55:47.532Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GIT系统基本命令行以及操作步骤">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. GIT系统">
+<meta name="twitter:description" content="GIT系统操作指令备忘以及学习小总结~ GIT系统基本指令以及配置指令笔记GIt的设计让使用者觉得自己比想象中的笨——Andrew Morton  在线配置指令1.生成SSH密钥 ssh-keygen -t rsa -C “邮箱地址” #密钥会在C盘User下的.ssh文件夹 ssh -T git@github.com#测试链接是否成功  具体步骤参见： https://www.cnblogs.c">
 
 
 
@@ -351,7 +351,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  785
+                  1.6k
                 </span>
               
 
@@ -367,7 +367,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  6
                 </span>
               
             </div>
@@ -388,30 +388,114 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<p>GIT系统操作指令备忘以及学习小总结~</p>
-<h2 id="在线操作"><a href="#在线操作" class="headerlink" title="在线操作"></a>在线操作</h2><h4 id="1-生成SSH密钥"><a href="#1-生成SSH密钥" class="headerlink" title="1.生成SSH密钥"></a>1.生成SSH密钥</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"邮箱地址"</span>          <span class="comment">#密钥会在C盘User下的.ssh文件夹</span></span><br><span class="line"></span><br><span class="line">ssh -T git@github.com                   <span class="comment">#测试链接是否成功</span></span><br></pre></td></tr></table></figure>
+        <p>GIT系统操作指令备忘以及学习小总结~</p>
+<h1 id="GIT系统基本指令以及配置指令笔记"><a href="#GIT系统基本指令以及配置指令笔记" class="headerlink" title="GIT系统基本指令以及配置指令笔记"></a>GIT系统基本指令以及配置指令笔记</h1><p>GIt的设计让使用者觉得自己比想象中的笨——Andrew Morton</p>
+<hr>
+<h3 id="在线配置指令"><a href="#在线配置指令" class="headerlink" title="在线配置指令"></a>在线配置指令</h3><h4 id="1-生成SSH密钥"><a href="#1-生成SSH密钥" class="headerlink" title="1.生成SSH密钥"></a>1.生成SSH密钥</h4><blockquote>
+<p>ssh-keygen -t rsa -C “邮箱地址” #密钥会在C盘User下的.ssh文件夹</p>
+<p>ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>#测试链接是否成功</p>
+</blockquote>
+<p><em>具体步骤参见</em>：</p>
+<p><a href="https://www.cnblogs.com/superjt/p/5977719.html" target="_blank" rel="noopener">https://www.cnblogs.com/superjt/p/5977719.html</a></p>
+<p> <a href="https://www.cnblogs.com/sdcs/p/8270029.html" target="_blank" rel="noopener">https://www.cnblogs.com/sdcs/p/8270029.html</a></p>
+<h4 id="2-设置默认的用户名与邮箱（可以理解成注册账户）"><a href="#2-设置默认的用户名与邮箱（可以理解成注册账户）" class="headerlink" title="2.设置默认的用户名与邮箱（可以理解成注册账户）"></a>2.设置默认的用户名与邮箱（可以理解成注册账户）</h4><blockquote>
+<p>git config  –global user.name “用户名”</p>
+<p>git config –global user.email “邮箱”</p>
+<p>git config –list#查看配置列表</p>
+</blockquote>
+<h4 id="3-添加在线仓库与本地仓库链接"><a href="#3-添加在线仓库与本地仓库链接" class="headerlink" title="3.添加在线仓库与本地仓库链接"></a>3.添加在线仓库与本地仓库链接</h4><p>git remote add origin http://……#<strong><em>注意这里的origin是在线库地址的指代名称</em></strong></p>
+<blockquote>
+<p>git remote#查看当前配置的远程仓库</p>
+</blockquote>
+<blockquote>
+<p>git remote -v#查看已经链接的在线库地址与指代名称</p>
+</blockquote>
+<hr>
+<h3 id="本地操作-加粗指令为常用指令"><a href="#本地操作-加粗指令为常用指令" class="headerlink" title="本地操作(加粗指令为常用指令)"></a>本地操作(加粗指令为常用指令)</h3><h4 id="1-将本地文件夹变为Git可管理的库并上传到Respostry"><a href="#1-将本地文件夹变为Git可管理的库并上传到Respostry" class="headerlink" title="1.将本地文件夹变为Git可管理的库并上传到Respostry"></a>1.将本地文件夹变为Git可管理的库并上传到Respostry</h4><p>git init #初始化，在项目文件夹内建立.git文件夹，这个文件夹用于缓存，git系统通过追踪这个文件夹里的文件来管理项目</p>
+<p><strong>git add .#将工作区所谓文件添加到缓存区(.git文件夹)，让git系统开始跟踪文件</strong></p>
+<blockquote>
+<p>git add xxx.xxx#添加指定文件到,git文件夹下</p>
+</blockquote>
+<p><strong>git commit -m “注释内容”#添加注释内容，并提交</strong></p>
+<blockquote>
+<p>git commit –amend -m xxx#修改上次提交的内容</p>
+</blockquote>
+<p><strong>git push -u origin master#将.git文件夹内容上传到云端仓库“origin”所代表的仓库中的master分支中</strong></p>
+<blockquote>
+<p>git push origin master#第一次加了-u后之后就不用加了</p>
+<p>git push origin master -f#强制push</p>
+</blockquote>
+<h4 id="2-将指定url地址下的内容克隆到本地"><a href="#2-将指定url地址下的内容克隆到本地" class="headerlink" title="2.将指定url地址下的内容克隆到本地"></a>2.将指定url地址下的内容克隆到本地</h4><p><strong>git clone <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>….</strong></p>
+<h4 id="3-从远程仓库下载新的改动"><a href="#3-从远程仓库下载新的改动" class="headerlink" title="3.从远程仓库下载新的改动"></a>3.从远程仓库下载新的改动</h4><p>git pull origin master#这里的origin依旧代表了仓库地址</p>
+<p>git reset –hard , git pull#忽略本地修改，直接将远程库文件拉下来</p>
+<h4 id="4-创建新分支并推到云端"><a href="#4-创建新分支并推到云端" class="headerlink" title="4.创建新分支并推到云端"></a>4.创建新分支并推到云端</h4><p>git checkout -b xxx#创建并切换到新分支xxx</p>
+<p>git push origin xxx#推送xxx到云端</p>
+<hr>
+<h3 id="回滚指令专辑"><a href="#回滚指令专辑" class="headerlink" title="回滚指令专辑"></a>回滚指令专辑</h3><p>reset指令一共可分为三类：</p>
+<h4 id="1-git-reset-–mixed-HEAD（等同于git-reset-HEAD）-移动HEAD的指向，并覆盖回暂存区"><a href="#1-git-reset-–mixed-HEAD（等同于git-reset-HEAD）-移动HEAD的指向，并覆盖回暂存区" class="headerlink" title="1.git reset [–mixed] HEAD（等同于git reset HEAD）# 移动HEAD的指向，并覆盖回暂存区"></a>1.git reset [–mixed] HEAD（等同于git reset HEAD）# 移动HEAD的指向，并覆盖回暂存区</h4><blockquote>
+<p>git reset HEAD #撤回最后一次commit，让上个提交版本覆盖回暂存区</p>
+<p>git reset HEAD~ #撤回最后一次commit，让上个提交版本覆盖回暂存区</p>
+<p>git reset HEAD~~#撤回倒数第二次commit，让上上个提交版本覆盖回暂存区</p>
+<p>git reset xxx #撤回xxx文件最后一次commit，让其上个版本覆盖回暂存区</p>
+<p>git reset xxx #这样可将xxx版本（未来版本）文件覆盖回暂存区，实现“往前滚”</p>
+</blockquote>
+<h4 id="2-git-reset-–soft-HEAD-仅仅移动HEAD的指向，不动另外两个区"><a href="#2-git-reset-–soft-HEAD-仅仅移动HEAD的指向，不动另外两个区" class="headerlink" title="2.git reset –soft HEAD #仅仅移动HEAD的指向，不动另外两个区"></a>2.git reset –soft HEAD #仅仅移动HEAD的指向，不动另外两个区</h4><blockquote>
+<p>git reset –soft HEAD~ #撤销一次错误commit，移动HEAD将其指向上一个快照（仅仅在储存区动作）</p>
+</blockquote>
+<h4 id="3-git-reset-–hard-HEAD-不仅移动HEAD指向，还将文件覆盖回工作区"><a href="#3-git-reset-–hard-HEAD-不仅移动HEAD指向，还将文件覆盖回工作区" class="headerlink" title="3.git reset –hard HEAD#不仅移动HEAD指向，还将文件覆盖回工作区"></a>3.git reset –hard HEAD#不仅移动HEAD指向，还将文件覆盖回工作区</h4><blockquote>
+<p>git reset –hard HEAD^ #撤销上一次commit，让上个版本覆盖回工作区以及暂存区（危）</p>
+<p>git reset –hard id#撤销到某个指定xxx版本（配合log使用），覆盖回工作区以及暂存区（危）</p>
+<p>git reset –hard id #这样可将xxx版本（未来版本）文件覆盖回暂存区与工作区，实现“往前滚”</p>
+<p>git reset –hard FETCH_HEAD,git pull#冲掉本地修改，直接将云端内容pull下来 </p>
+<p>git reset –hard HEAD~#移动HEAD，将其指向上一个快照，将其覆盖到暂存区以及工作区</p>
+</blockquote>
+<h4 id="4-git-checkout-使用暂存区的老文件覆盖掉工作区的新文件（危）"><a href="#4-git-checkout-使用暂存区的老文件覆盖掉工作区的新文件（危）" class="headerlink" title="4.git checkout#使用暂存区的老文件覆盖掉工作区的新文件（危）"></a>4.git checkout#使用暂存区的老文件覆盖掉工作区的新文件（危）</h4><blockquote>
+<p>git checkout – xxx #使用暂存区的老文件xxx，覆盖回工作区（危）</p>
+</blockquote>
+<hr>
+<h3 id="删除指令"><a href="#删除指令" class="headerlink" title="删除指令"></a>删除指令</h3><blockquote>
+<p>git rm xxx#删除xxx文件（从工作区以及暂存区删除），如果想从储存区移除，那么就要用reset soft 指令</p>
+<p>git rm –cached xxx#仅删除暂存区文件</p>
+<p>git rm -f xxx#从工作区与暂存区暴力删除xxx文件，不管二者是否一致</p>
+</blockquote>
+<hr>
+<h3 id="其他指令"><a href="#其他指令" class="headerlink" title="其他指令"></a>其他指令</h3><h4 id="1-初始N连击"><a href="#1-初始N连击" class="headerlink" title="1.初始N连击"></a>1.初始N连击</h4><blockquote>
+<p>mkdir xxxx#创建文件夹xxxx</p>
+<p>cd xxxx/#进入到文件夹xxxx</p>
+<p>pwd#显示当前目录</p>
+<p>rm xxx #删除xxx文件</p>
+<p>git init #初始化，在项目文件夹内建立.git文件夹，这个文件夹用于缓存，git系统通过追踪这个文件夹里的文件来管理项目</p>
+</blockquote>
+<h4 id="2-文件比较"><a href="#2-文件比较" class="headerlink" title="2.文件比较"></a>2.文件比较</h4><blockquote>
+<p>git diff #比较暂存区以及工作区的文件</p>
+<p>git diff xxx1 xxx2#比较两个快照内容</p>
+<p>git diff id #比较储存区快照与工作区快照的文件内容</p>
+<p>git diff HEAD#比较当前指向的快照与储存区的文件内容</p>
+<p>git diff xxx #查看xxx文件的那些内容被修改过了</p>
+<p>git diff – cached #比较暂存区与储存区快照</p>
+<p>git diff – cached id #比较id文件在暂存区与储存区的快照</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">---代表旧版本</span><br><span class="line">+++代表新版本</span><br><span class="line">白色文字代表共有代码，</span><br></pre></td></tr></table></figure>
 
-<p>具体参见：</p>
-<p>   <a href="https://www.cnblogs.com/superjt/p/5977719.html" target="_blank" rel="noopener">https://www.cnblogs.com/superjt/p/5977719.html</a></p>
-<p>   <a href="https://www.cnblogs.com/sdcs/p/8270029.html" target="_blank" rel="noopener">https://www.cnblogs.com/sdcs/p/8270029.html</a></p>
-<h4 id="2-设置默认的用户名与邮箱"><a href="#2-设置默认的用户名与邮箱" class="headerlink" title="2.设置默认的用户名与邮箱"></a>2.设置默认的用户名与邮箱</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git config  --global user.name <span class="string">"用户名"</span>  <span class="comment">#设置用户名</span></span><br><span class="line"></span><br><span class="line">git config --global user.email <span class="string">"邮箱"</span>    <span class="comment">#设置邮箱</span></span><br><span class="line"></span><br><span class="line">git config --list                       <span class="comment">#查看配置列表</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="3-添加在线仓库与本地仓库链接"><a href="#3-添加在线仓库与本地仓库链接" class="headerlink" title="3.添加在线仓库与本地仓库链接"></a>3.添加在线仓库与本地仓库链接</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin http://xxx        <span class="comment">#注意这里的origin是在线库地址的指代名称</span></span><br><span class="line"></span><br><span class="line">git remote                              <span class="comment">#查看当前配置的远程仓库</span></span><br><span class="line"></span><br><span class="line">git remote -v                           <span class="comment">#查看已经链接的在线库地址与指代名称</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="本地操作"><a href="#本地操作" class="headerlink" title="本地操作"></a>本地操作</h2><h4 id="1-将本地文件夹变为Git可管理的库并上传到Respostry"><a href="#1-将本地文件夹变为Git可管理的库并上传到Respostry" class="headerlink" title="1.将本地文件夹变为Git可管理的库并上传到Respostry"></a>1.将本地文件夹变为Git可管理的库并上传到Respostry</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">git init                   <span class="comment">#初始化，在本地文件见内建立.git文件夹，这个文件夹用于缓存</span></span><br><span class="line"></span><br><span class="line">git add .                  <span class="comment">#添加当前文件夹内容到.git文件夹下，做好上传准备，这是每次上传的必备步骤</span></span><br><span class="line"></span><br><span class="line">git add xxx.xxx            <span class="comment">#添加指定文件到,git文件夹下</span></span><br><span class="line"></span><br><span class="line">git commit -m <span class="string">"注释内容"</span>     <span class="comment">#添加注释内容，每一次push前必须进行此步，不然无法上传</span></span><br><span class="line"></span><br><span class="line">git push -u origin master   <span class="comment">#将.git文件夹内容push到origin所代表的仓库中的master分支中</span></span><br><span class="line"></span><br><span class="line">git push origin master      <span class="comment">#第一次加了-u后之后就不用加了</span></span><br><span class="line"></span><br><span class="line">git push origin master -f   <span class="comment">#强制push</span></span><br></pre></td></tr></table></figure>
-
-<p>其中[git add. ] [git commit -m”xxx”] [git push -u origin master]为三大常用指令</p>
-<h4 id="2-将指定url地址下的内容克隆到本地"><a href="#2-将指定url地址下的内容克隆到本地" class="headerlink" title="2.将指定url地址下的内容克隆到本地"></a>2.将指定url地址下的内容克隆到本地</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git@github.com....</span><br></pre></td></tr></table></figure>
-
-<h4 id="3-从远程仓库下载新的改动"><a href="#3-从远程仓库下载新的改动" class="headerlink" title="3.从远程仓库下载新的改动"></a>3.从远程仓库下载新的改动</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git pull origin master          <span class="comment">#这里的origin依旧代表了仓库地址</span></span><br><span class="line"></span><br><span class="line">git reset --hard , git pull     <span class="comment">#忽略本地修改，直接将远程库文件拉下来</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="4-创建新分支并推到云端"><a href="#4-创建新分支并推到云端" class="headerlink" title="4.创建新分支并推到云端"></a>4.创建新分支并推到云端</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b xxx             <span class="comment">#创建并切换到新分支xxx</span></span><br><span class="line"></span><br><span class="line">git push origin xxx             <span class="comment">#推送xxx到云端</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="其他指令"><a href="#其他指令" class="headerlink" title="其他指令"></a>其他指令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">mkdir xxxx                     <span class="comment">#创建文件夹xxxx</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> xxxx/                       <span class="comment">#进入到文件夹xxxx</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">pwd</span>                            <span class="comment">#显示当前目录</span></span><br><span class="line"></span><br><span class="line">rm xxx                         <span class="comment">#删除xxx文件</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">git status                     <span class="comment">#查看当前库里的情况</span></span><br><span class="line"></span><br><span class="line">git remote -v                  <span class="comment">#查看远程仓库情况</span></span><br><span class="line"></span><br><span class="line">git remote rm xxx              <span class="comment">#删除远程仓库xxx</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">git branch                     <span class="comment">#查看当前本地所有分支</span></span><br><span class="line"></span><br><span class="line">git checkout xxx               <span class="comment">#切换分支</span></span><br><span class="line"></span><br><span class="line">git branch -r                  <span class="comment">#查看远端分支</span></span><br><span class="line"></span><br><span class="line">git branch -a                  <span class="comment">#查看所有分支</span></span><br><span class="line"></span><br><span class="line">git branch xxx                 <span class="comment">#查看远程分支</span></span><br><span class="line"></span><br><span class="line">git branch -d xxx              <span class="comment">#删除xxx分支</span></span><br><span class="line"></span><br><span class="line">git merge xxx                  <span class="comment">#合并分支到master</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">git remote show origin         <span class="comment">#查看远程分支与本地分支的关系</span></span><br><span class="line"></span><br><span class="line">git stash,git stash,git stash pop<span class="comment">#三连备份本地修改，正常pull,然后将本地修改应用到当前工作区</span></span><br><span class="line"></span><br><span class="line">git diff xxx                   <span class="comment">#查看xxx文件的那些内容被修改过了</span></span><br><span class="line"></span><br><span class="line">git <span class="built_in">log</span>                        <span class="comment">#查看以往版本</span></span><br><span class="line"></span><br><span class="line">git reset --hard HEAD^         <span class="comment">#滚回上个版本</span></span><br><span class="line"></span><br><span class="line">git reset --hard xxx           <span class="comment">#滚到某个版本</span></span><br><span class="line"></span><br><span class="line">git reset --hard FETCH_HEAD,git pull<span class="comment">#冲掉本地修改，直接将云端内容pull下来</span></span><br></pre></td></tr></table></figure>
-
-<p>进阶指令可参见：</p>
+<h4 id="3-其他常用指令"><a href="#3-其他常用指令" class="headerlink" title="3.其他常用指令"></a>3.其他常用指令</h4><p>git status#查看当前库里的情况，返回分支情况、工作区文件情况（工作区的文件是不受跟踪的，而缓存区与储存区的文件相反）</p>
+<p>git log #查看历史提交版本id（只能看到当前HEAD指向目的地之前的版本）</p>
+<p>git mv old_file_name new_file_name #同时在三个区域修改文件名称</p>
+<p>git remote -v#查看远程仓库情况</p>
+<p>git remote rm xxx#删除远程仓库xxx</p>
+<p>git branch#查看当前本地所有分支</p>
+<p>git checkout xxx#切换分支</p>
+<p>git branch xxx #创建分支xxx</p>
+<p>git checkout xxx #切换分支到xxx</p>
+<p>git branch -r#查看远端分支</p>
+<p>git branch -a#查看所有分支</p>
+<p>git branch xxx#查看远程分支</p>
+<p>git branch -d xxx#删除xxx分支</p>
+<p>git merge xxx#合并分支到master</p>
+<p>git remote show origin#查看远程分支与本地分支的关系</p>
+<p>git stash,git stash,git stash pop#三连备份本地修改，正常pull,然后将本地修改应用到当前工作区</p>
+<p><em>进阶指令可参考</em>：</p>
 <p><a href="https://www.jianshu.com/p/ac33f0295629" target="_blank" rel="noopener">https://www.jianshu.com/p/ac33f0295629</a></p>
+<p><a href="https://www.bilibili.com/video/av8261658/?p=4" target="_blank" rel="noopener">https://www.bilibili.com/video/av8261658/?p=4</a></p>
 
       
     </div>
@@ -618,7 +702,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#在线操作"><span class="nav-number">1.</span> <span class="nav-text">在线操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-生成SSH密钥"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.生成SSH密钥</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-设置默认的用户名与邮箱"><span class="nav-number">1.0.2.</span> <span class="nav-text">2.设置默认的用户名与邮箱</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-添加在线仓库与本地仓库链接"><span class="nav-number">1.0.3.</span> <span class="nav-text">3.添加在线仓库与本地仓库链接</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#本地操作"><span class="nav-number">2.</span> <span class="nav-text">本地操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-将本地文件夹变为Git可管理的库并上传到Respostry"><span class="nav-number">2.0.1.</span> <span class="nav-text">1.将本地文件夹变为Git可管理的库并上传到Respostry</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-将指定url地址下的内容克隆到本地"><span class="nav-number">2.0.2.</span> <span class="nav-text">2.将指定url地址下的内容克隆到本地</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-从远程仓库下载新的改动"><span class="nav-number">2.0.3.</span> <span class="nav-text">3.从远程仓库下载新的改动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-创建新分支并推到云端"><span class="nav-number">2.0.4.</span> <span class="nav-text">4.创建新分支并推到云端</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他指令"><span class="nav-number">3.</span> <span class="nav-text">其他指令</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#GIT系统基本指令以及配置指令笔记"><span class="nav-number">1.</span> <span class="nav-text">GIT系统基本指令以及配置指令笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#在线配置指令"><span class="nav-number">1.0.1.</span> <span class="nav-text">在线配置指令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-生成SSH密钥"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">1.生成SSH密钥</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-设置默认的用户名与邮箱（可以理解成注册账户）"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">2.设置默认的用户名与邮箱（可以理解成注册账户）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-添加在线仓库与本地仓库链接"><span class="nav-number">1.0.1.3.</span> <span class="nav-text">3.添加在线仓库与本地仓库链接</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地操作-加粗指令为常用指令"><span class="nav-number">1.0.2.</span> <span class="nav-text">本地操作(加粗指令为常用指令)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-将本地文件夹变为Git可管理的库并上传到Respostry"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">1.将本地文件夹变为Git可管理的库并上传到Respostry</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-将指定url地址下的内容克隆到本地"><span class="nav-number">1.0.2.2.</span> <span class="nav-text">2.将指定url地址下的内容克隆到本地</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-从远程仓库下载新的改动"><span class="nav-number">1.0.2.3.</span> <span class="nav-text">3.从远程仓库下载新的改动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-创建新分支并推到云端"><span class="nav-number">1.0.2.4.</span> <span class="nav-text">4.创建新分支并推到云端</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#回滚指令专辑"><span class="nav-number">1.0.3.</span> <span class="nav-text">回滚指令专辑</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-git-reset-–mixed-HEAD（等同于git-reset-HEAD）-移动HEAD的指向，并覆盖回暂存区"><span class="nav-number">1.0.3.1.</span> <span class="nav-text">1.git reset [–mixed] HEAD（等同于git reset HEAD）# 移动HEAD的指向，并覆盖回暂存区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-git-reset-–soft-HEAD-仅仅移动HEAD的指向，不动另外两个区"><span class="nav-number">1.0.3.2.</span> <span class="nav-text">2.git reset –soft HEAD #仅仅移动HEAD的指向，不动另外两个区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-git-reset-–hard-HEAD-不仅移动HEAD指向，还将文件覆盖回工作区"><span class="nav-number">1.0.3.3.</span> <span class="nav-text">3.git reset –hard HEAD#不仅移动HEAD指向，还将文件覆盖回工作区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-git-checkout-使用暂存区的老文件覆盖掉工作区的新文件（危）"><span class="nav-number">1.0.3.4.</span> <span class="nav-text">4.git checkout#使用暂存区的老文件覆盖掉工作区的新文件（危）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除指令"><span class="nav-number">1.0.4.</span> <span class="nav-text">删除指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他指令"><span class="nav-number">1.0.5.</span> <span class="nav-text">其他指令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-初始N连击"><span class="nav-number">1.0.5.1.</span> <span class="nav-text">1.初始N连击</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-文件比较"><span class="nav-number">1.0.5.2.</span> <span class="nav-text">2.文件比较</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-其他常用指令"><span class="nav-number">1.0.5.3.</span> <span class="nav-text">3.其他常用指令</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -684,7 +768,7 @@
 <!--添加字数统计-->
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共3.6k字</span>
+  <span class="post-count">博客全站共4.4k字</span>
 </div>
 
         
